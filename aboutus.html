@@ -1,0 +1,309 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <style type="text/css">
+@font-face {
+    font-family: "MoonHouse";
+    src: url(moonohuse.ttf) format("truetype");
+}
+p.customfont { 
+    font-family: "MoonHouse", Verdana, Tahoma;
+}
+.navbar {
+    min-height: 100px;
+}
+ul.navbar-nav > li > a {
+    line-height: 100px;
+}
+img.logo {
+    padding-top: -50px;
+    width: 200px;
+    height: auto;
+    float: left;
+}
+.button {
+    border: 1pxc;
+    background-color: red;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: black;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: red;
+    display: block;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  </style>
+   <title>X Tech</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body background="blackbackground.jpg">
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index3.html"><img style="position: absolute; left: 0px;" src="x2.jpg" width="200" height="100"  class="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="index3.html">Home</a></li>
+        <li class="dropdown">
+
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Our Products</b><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="phon.html">Smartfones</a></li>
+            <li><a href="tablet.html">Tablets</a></li>
+            <li><a href="headphones.html">Headphones</a></li>
+            <li><a href="apps.html">Apps</a></li>
+            <li><a href="newproducts.html">Newest Products</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="aboutus.html">About Us</a></li>
+<li><a data-toggle="modal" data-target="#contactusModal"><span class="glyphicon glyphicon-log-in"></span><b> Contact Us</b></a></li>
+                </ul>
+<div id="contactusModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">×</button>
+<h4 class="modal-title">Contact Us</h4>
+</div>
+<div class="modal-body">
+
+        <form role="form" method="post" id="reused_form" >
+        <p>
+            Send Us Any Of Your Feedback, Comments, Questions or Suggestions You Have By Filling Out The Form Below!.
+        </p>
+
+        <div class="form-group">
+            <label for="name">
+                Name:</label>
+            <input type="text" class="form-control"
+            id="name" name="name"   required maxlength="50">
+
+        </div>
+        <div class="form-group">
+            <label for="email">
+                Email:</label>
+            <input type="email" class="form-control"
+            id="email" name="email" required maxlength="50">
+        </div>
+        <div class="form-group">
+            <label for="name">
+                Message:</label>
+            <textarea class="form-control" type="textarea" name="message"
+            id="message" placeholder="Your Message Here"
+            maxlength="6000" rows="7"></textarea>
+        </div>
+
+
+
+
+
+        <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Send</button>
+
+    </form>
+    <div id="success_message" style="width:100%; height:100%; display:none; ">
+        <h3>Sent your message successfully!</h3>
+    </div>
+    <div id="error_message"
+    style="width:100%; height:100%; display:none; ">
+        <h3>Error</h3>
+        Sorry there was an error sending your form.
+
+    </div>
+</div>
+
+</div>
+
+ </div>
+</div>
+      </ul>
+    </div>
+  </div>
+    </div>
+  </div>
+</nav> 
+<center>
+
+  <img src="x.jpg" width="25%"> 
+  <br>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#History">History</a>
+  <a href="#Mission">Our Mission</a>
+  <a href="#CEO">Our CEO's</a>
+  <a href="#Mike">Mike Robite</a>
+  <a href="#Esdi">Esdi Kard</a>
+  <a href="#Aditya">Aditya Mota</a>
+</div>
+<span style="font-size:30px;cursor:pointer;color: white" onclick="openNav()">&#9776; Click To Open Sidebar</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+  <font size="+5" color="white">
+    <p class="customfont"><a name = "History">History Of X Technologies</a>
+    </p>
+  </font>
+  <br>
+  <font size="+2" color="white">
+   X Technologies was founded on November 5th, 2011 by Mike Robite, Esdi Kard and Aditya Mota <br>
+   in Princeton, New Jersey. X Tech. released the XFONE on December 4th, 2011 with XAppStore and XMusic<br>
+   followed by the XTAB on December 22nd and the XSET on December 29th. The XFONE was an instant <br>
+   success with over 25 Million Units Sold From December 4th-December 31st ranking X Tech the <br>
+   no.1 Smartphone manufacturer in of 2011 Q4 above Apple. Following the success of the XFONE <br>
+   and the XTAB, X Tech. released the XFONE 2 and XTAB 2 both on June 10th, 2012 and the <br>
+   XFONE 3 and XTAB 3 on June 12th, 2013. On Janruary 20th, 2014, X Tech made their company <br>
+   Public and on April 23rd, 2014 the XSET 2 was released. X Tech hit a short roadbump with <br>
+   the release of the XFONE 4 on June 19th, 2014 and XTAB 4 on August 1st, 2014 as the sales <br>
+   were at an all-time low. However, on Janurary 15th, 2015 the company regained its success <br>
+   with the new and improved XFONE IV+ and XTAB IV+. The XFONE V was released on May 26th, 2015 <br>
+   and XTAB V was released on October 7th, 2015. The XFONE 6 was released on August 6th, 2016<br>
+   and the XTAB 6 was released on October 31st, 2016. In 2017, X Tech focused on Apps<br>
+   The company released the XCLOUD on Janruary 18th, 2017, XMAPS on August 7th, 2017 <br> 
+   and XLIBRARY on October 18th, 2017. The company's newest releases feature the <br>
+   XFONE 7 on March 12th, 2018, the XTAB 7 on March 26th, 2018 and the XSET 3 on <br>
+   May 18th, 2018. The CEO Triumvirate announced a press confrence regarding <br>
+   X Tech's 2019 plans on August 24th, 2018.  
+   <br>
+     <font size="+5" color="white">
+      <br>
+    <p class="customfont"><a name = "Mission">OUR MISSION</a>
+    </p>
+  </font>
+  <font size="+2" color="white">
+   Our Mission is to provide the consumer with the best product possible. <br>
+   When we first created X Tech we had a dream. A Dream to one day be <br>
+   in the same market as Apple and Samsung. Today we're able to look back <br>
+   at our past selves and smile. Who would've thought 3 Princeton Graduates <br>
+   would be able to stand next to Apple, Samsung and Microsoft. <br>
+   We couldn't have done any of this without you, the people. <br>
+   Every day YOU are the reason we work hard. YOU are the reason <br>
+   we work longer and harder hours. Because at the end of the day <br>
+   knowing we'll change lives makes everything worth it.  
+   <br>
+     <font size="+5" color="white">
+      <br>
+    <p class="customfont"><a name = "CEO">ABOUT OUR CEO's</a>
+    </p>
+    </font>
+  <font size="+2" color="white">
+    X Technologies was founded by Mike Robite, Esdi Kard and Aditya Mota. <br>
+    The Three Boys met at Princeton University. The Three were roommates <br>
+    for all 4 years at the school. When the 3 Graduated in 2010 they <br>
+    moved into an apartment near the University where they developed the <br>
+    first prototype for the XFONE. After a successful pitch on Shark Tank <br>
+    the three boys recieved a deal from Mark Cuban and Mr. Wonderful himself <br>
+    Kevin O'Leary. Cuban and O'Leary manufactured the devices while the three <br>
+    focused on developing the devices. After the successful release of the XFONE <br>
+    Cuban and O'Leary threw a huge party for them in Ceasers Palace, Las Vegas <br>
+    and the rest is history.
+    <br>
+    <font size="+5" color="white">
+    <p class="customfont"><a name = "Mike">MIKE ROBITE</a>
+    </p>
+  </font>
+  <font size="+2" color="white">
+   Mike Robite Was born in Trenton, New Jersey in 1988. He was always number one <br>
+   on his schools robotics team. He won his first hackaton at the age of 11. <br>
+   He was named Valedictorian at His Graduation. Mike chose Princeton over <br>
+   Harvard, MIT and Georgetown. Mike was known around his schools as <br>
+   "Steve Jobs Jr" and his teachers would often pull him out of his other class <br>
+   to help them with technological related issues.
+   <br>
+    <font size="+5" color="white">
+    <p class="customfont"><a name = "Esdi">ESDI KARD</a>
+    </p>
+  </font>
+  <font size="+2" color="white">
+   Esdi Kard Was born in Harrisburg, Pennsylvaia in 1989. As a kid he always<br>
+   wanted to be a pilot. That was until he met Bill Gates at the age of 7.<br>
+   That inspired him to enter and pursue technology as his field. Esdi<br>
+   managed to hack into his Windows 98 Computer and finished as one of the<br>
+   brightest students in his class. He even skipped 7th grade. In 2010 he <br>
+   successfully programed a game for IOS which he named Xtraordinary, <br>
+   which later became the basis for the name oh X Technologies and its slogan.
+   <br>
+    <font size="+5" color="white">
+    <p class="customfont"><a name = "Aditya">ADITYA MOTA</a>
+    </p>
+  </font>
+  <font size="+2" color="white">
+   Aditya Mota was born in Princeton, New Jersey in 1989. As a child, he <br>
+   was always considered a prodigy among his peers, teachers and he was <br>
+   even on the radar of a few Princeton Professers. He always won his schools<br>
+   Geography Bee and always shocked his teachers with his creative skills.<br>
+   He is known as the creative mind behind X Technologies. After being named<br>
+   valedictorian he grew to fame as a recording of his graduation speech<br>
+   flew across a new popular site named Youtube. <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="footer">
+  <font size="+40" color="white">
+  <p class="customfont">X TECHNOLOGIES</p>
+  </font>
+</div>
+</center>
+ </body>
+ </html>

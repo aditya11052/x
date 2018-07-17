@@ -1,0 +1,310 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <style type="text/css">
+@font-face {
+    font-family: "MoonHouse";
+    src: url(moonohuse.ttf) format("truetype");
+}
+p.customfont { 
+    font-family: "MoonHouse", Verdana, Tahoma;
+}
+b.customfont { 
+    font-family: "MoonHouse", Verdana, Tahoma;
+    size: +10;
+}
+.navbar {
+    min-height: 100px;
+}
+ul.navbar-nav > li > a {
+    line-height: 100px;
+}
+img.logo {
+    padding-top: -50px;
+    width: 200px;
+    height: auto;
+    float: left;
+}
+.button {
+    border: 1pxc;
+    background-color: red;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: black;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+.center-align  { text-align: center; }
+  </style>
+   <title>X Tech</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body background="blackbackground.jpg">
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index3.html"><img style="position: absolute; left: 0px;" src="x2.jpg" width="200" height="100"  class="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index3.html">Home</a></li>
+        <li class="dropdown">
+
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Our Products</b><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="phon.html">Smartfones</a></li>
+            <li><a href="tablet.html">Tablets</a></li>
+            <li><a href="headphones.html">Headphones</a></li>
+            <li><a href="apps.html">Apps</a></li>
+            <li><a href="newproducts.html">Newest Products</a></li>
+          </ul>
+        </li>
+        <li><a href="aboutus.html">About Us</a></li>
+<li><a data-toggle="modal" data-target="#contactusModal"><span class="glyphicon glyphicon-log-in"></span><b> Contact Us</b></a></li>
+                </ul>
+<div id="contactusModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">×</button>
+<h4 class="modal-title">Contact Us</h4>
+</div>
+<div class="modal-body">
+
+        <form role="form" method="post" id="reused_form" >
+        <p>
+            Send Us Any Of Your Feedback, Comments, Questions or Suggestions You Have By Filling Out The Form Below!.
+        </p>
+
+        <div class="form-group">
+            <label for="name">
+                Name:</label>
+            <input type="text" class="form-control"
+            id="name" name="name"   required maxlength="50">
+
+        </div>
+        <div class="form-group">
+            <label for="email">
+                Email:</label>
+            <input type="email" class="form-control"
+            id="email" name="email" required maxlength="50">
+        </div>
+        <div class="form-group">
+            <label for="name">
+                Message:</label>
+            <textarea class="form-control" type="textarea" name="message"
+            id="message" placeholder="Your Message Here"
+            maxlength="6000" rows="7"></textarea>
+        </div>
+
+
+
+
+
+        <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Send</button>
+
+    </form>
+    <div id="success_message" style="width:100%; height:100%; display:none; ">
+        <h3>Sent your message successfully!</h3>
+    </div>
+    <div id="error_message"
+    style="width:100%; height:100%; display:none; ">
+        <h3>Error</h3>
+        Sorry there was an error sending your form.
+
+    </div>
+</div>
+
+</div>
+
+ </div>
+</div>
+      </ul>
+    </div>
+  </div>
+    </div>
+  </div>
+</nav> 
+<center>
+  <div class="jumbotron">
+    <h1><p class="customfont">
+    <font size="+130">
+    X TECHNOLOGIES
+    </font>
+    </p></h1>      
+    Technology Made <b class = "customfont"> XTRAORDINARILY</b> Awesome
+  </div>
+      
+  <br>
+  <font size="+150"  color="white">
+  <p class="customfont">NEWEST PRODUCTS</p>
+  </font>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="xp7.gif" style="width:50%">
+  <img class="mySlides" src="xt7.gif" style="width:50%">
+  <img class="mySlides" src="xs3.gif" style="width:50%">
+
+  <button class="w3-button w3-red w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-red w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<a href="newproducts.html"><button class="button"><p class = "customfont">BUY NOW</button></a>
+  <br>
+<audio src="yu.mp3" autoPlay>
+  <source src="yu.mp3" type="audio/mpeg">
+  <source src="yu.ogg" type="audio/ogg">
+</audio>
+<br>
+<br>
+  <table border="2px" class="center-align" style="color: white;">
+    <font color="white">
+  <tr>
+    <td>
+        <h1>History </h1>
+    </td>  
+    <td>
+      <h1> Our Mission</h1>
+    </td>
+    <td>
+      <h1>Our CEO's</h1>
+    </td>
+    <td>
+        <h1>Mike Robite</h1>
+    </td>  
+    <td>
+      <h1>Esdi Kard</h1>
+    </td>
+    <td>
+      <h1>Aditya Mota</h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     X Technologies was <br>
+     founded on <br>
+     November 5th, 2011 <br>
+     by Mike Robite, <br>
+     Esdi Kard and <br>
+     Aditya Mota in <br>
+     Princeton, New Jersey. <br>
+   X Tech. released...<br>
+    <a href="aboutus.html"> <button class="button">Read More</button></a> 
+    </td>  
+    <td>
+    Our Mission is to <br>
+    provide the consumer <br>
+    with the best <br>
+    product possible. <br>
+   When we first <br>
+   created X Tech <br>
+   we had a dream. <br>
+   A Dream to one.... <br>
+    <a href="aboutus.html"> <button class="button">Read More</button></a>  
+    </td>
+    <td>
+    X Technologies was <br>
+    founded by Mike <br>
+    Robite, Esdi Kard and <br>
+    Aditya Mota. The <br>
+    Three Boys met <br>
+    at Princeton University.<br> 
+    The Three were <br>
+    roommates for all.... <br>
+    <a href="aboutus.html"> <button class="button">Read More</button></a>  
+    </td>
+    <td>
+     Mike Robite Was <br>
+     born in Trenton, <br>
+     New Jersey in 1988. <br>
+     He was always <br>
+     number one on <br>
+     his schools' robotics <br>
+      team. He won his <br>
+      first hackaton at.... <br>
+    <a href="aboutus.html"> <button class="button">Read More</button></a> 
+    </td>  
+    <td>
+    Esdi Kard Was <br>
+    born in Harrisburg,<br>
+     Pennsylvaia in 1989.<br>
+      As a kid<br>
+     he always wanted <br>
+     to be a pilot.<br>
+      That was until <br>
+      he met Bill Gates.... <br>
+    <a href="aboutus.html"> <button class="button">Read More</button></a>  
+    </td>
+    <td>
+    Aditya Mota was <br>
+    born in Princeton, <br>
+    New Jersey in 1989.<br> 
+    As a child, he <br>
+   was always considered <br>
+   a prodigy among his <br>
+   peers, teachers and <br>
+   he was even on the.... <br>
+    <a href="aboutus.html"> <button class="button">Read More</button></a>  
+    </td>
+  </tr>
+  </table>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="footer">
+  <font size="+40" color="white">
+  <p class="customfont">X TECHNOLOGIES</p>
+  </font>
+</div>
+</center>
+ </body>
+ </html>
